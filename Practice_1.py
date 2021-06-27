@@ -44,10 +44,12 @@ while a != 7:
         for k, v in purchase_book.items():
             if v == val:
                 print('Самая дорогая покупка -',k,':', v)
+                break
     elif a == 5:
         itemName = input('Введите название покупки:')
         if itemName in purchase_book.keys():
             print(itemName,':',purchase_book.get(itemName))
+            break
         else:
             print('Данного товара нет в книге покупок')
     elif a == 6:
