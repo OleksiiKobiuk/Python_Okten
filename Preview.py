@@ -85,13 +85,26 @@ while a != 6:
             x+=1
         print('*'*i, sep='')
     elif a == 5:
-        x = 1
-        while x<=10:
-            y = 1
-            while y<=10:
-                print(x,'*',y, '= ', x*y)
-                y+=1
-            x+=1
+        i = 1
+        size = 10
+        while i <= size:
+            j = 1
+            while j <= size:
+                res = i * j
+                if res // 10:
+                    print(res, end='  ')
+                else:
+                    print(res, end='   ')
+                j += 1
+            print()
+            i += 1
+        # x = 1
+        # while x<=10:
+        #     y = 1
+        #     while y<=10:
+        #         print(x,'*',y, '= ', x*y)
+        #         y+=1
+        #     x+=1
 
 # ***  - вывести элемент листа, значение которого ближе всего к среднему арифметическому всех элементов этого же листа
 # пример:
