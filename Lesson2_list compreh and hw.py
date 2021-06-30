@@ -135,7 +135,7 @@ def avgListValue(listX):
     return(sum(listX)/len(listX))
 print(avgListValue(numberList))
 
-#
+
 # decorators
 # - є функція:
 # def pr():

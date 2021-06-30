@@ -54,9 +54,3 @@ while a != 7:
             print('Данного товара нет в книге покупок')
     elif a == 6:
         print('Средний чек =', int(sum(purchase_book.values())/len(purchase_book.values())))
-
-
-
-
-
-
