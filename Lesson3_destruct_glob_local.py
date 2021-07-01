@@ -37,7 +37,7 @@ class Cinderella:
         Cinderella.count += 1
 
     def __str__(self):
-        return f'Cinderella {self.name} - "{self.age}" years old with foot size - "{self.foot_size}"'
+        return f'Cinderella: {self.name} "{self.age}" years old with foot size - "{self.foot_size}"'
 
     def __repr__(self):
         return self.__str__()
@@ -52,9 +52,10 @@ class Prince:
         for i in x:
            if vars(i).get('foot_size') == self.shoe_found:
                     return i
+        return ('not found Cinderella')
 
 
 prince1 = Prince('Alek', 25, 36)
 cinderellas = [Cinderella('Alla', 25, 40), Cinderella('Sasha', 19, 36), Cinderella('Valya', 35, 42), Cinderella('Galya', 20, 38)]
 print(f'Prince {prince1.name} found shoe "{prince1.shoe_found}" size which belongs to', prince1.find_cinderella(cinderellas))
-print(Cinderella.count)
+print("Numbers of Cinderella's copies is",Cinderella.count)
