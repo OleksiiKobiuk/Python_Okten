@@ -50,9 +50,10 @@ class Prince:
 
     def find_cinderella(self, x:list):
         for i in x:
-           if vars(i).get('foot_size') == self.shoe_found:
+            if i.foot_size == self.shoe_found:
+           # if vars(i).get('foot_size') == self.shoe_found:
                     return i
-        return ('not found Cinderella')
+        return 'not found Cinderella'
 
 
 prince1 = Prince('Alek', 25, 36)
