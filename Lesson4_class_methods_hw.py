@@ -197,9 +197,11 @@ class Letter:
         self.__text = text
         Letter.__count += 1
 
+    @property
     def get_text(self):
         return self.__text
 
+    @property
     def set_text(self, new_text):
         self.__text = new_text
 
@@ -216,7 +218,7 @@ letter1.text_to_list()
 letter2.text_to_list()
 print(textList)
 print(Letter.get_count())
-print(letter2.get_text())
+print(letter2.get_text)
 letter2.set_text('Have not seen long time')
-print(letter2.get_text())
+print(letter2.get_text)
 

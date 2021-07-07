@@ -17,7 +17,7 @@ purchase_book = {
     'bicycle': 2300,
     'notebook': 26000,
     'rice': 86
-};
+}
 a=0
 while a != 7:
     print('1.Создать запись в книге покупок\n'
