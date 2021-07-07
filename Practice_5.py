@@ -34,7 +34,7 @@ class PurchaseBook:
         return self.__getitem__()
 
 
-purchase_book = {
+purchase_book: Dict[str:Any] = {
         'apple': 45,
         'beer': 30,
         'mango': 60,
