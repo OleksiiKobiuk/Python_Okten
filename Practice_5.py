@@ -70,7 +70,7 @@ while a != 7:
         with open('PB', 'w') as file:
             json.dump(pl1.purchase_dict, file)
         with open('PB', 'r') as file:
-            purchase_book:Dict[str:Any] = json.load(file)
+            purchase_book: Dict[str, Any] = json.load(file)
         for k, v in purchase_book.items():
             print(k)
             print(v)
