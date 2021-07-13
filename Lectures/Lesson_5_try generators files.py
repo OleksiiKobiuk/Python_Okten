@@ -144,7 +144,7 @@ import pickle
 import json
 from typing import Dict, Any
 
-user: Dict[str:Any] = {
+user: Dict[str, Any] = {
     "name": 'Max',
     "age": 15,
     "status": False
@@ -163,6 +163,6 @@ user: Dict[str:Any] = {
 #     json.dump(user, file)
 
 with open('db.json', 'r') as file:
-    user: dict[str:Any] = json.load(file)
+    user: dict[str, Any] = json.load(file)
 
 print(user)
