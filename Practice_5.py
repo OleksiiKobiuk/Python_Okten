@@ -31,13 +31,13 @@ class PurchaseBook:
         for i in self.purchase_list:
             print(i)
 
-    def __sum_purchases__(self):
+    def sum_of_purchases(self):
         self.sum_purchases = 0
         for i in self.purchase_list:
             self.sum_purchases += i.get('cost')
         return print('Общая сумма всех покупок =', self.sum_purchases)
 
-    def __max_purchase__(self):
+    def max_purchase(self):
         self.new_l = [i.get('cost') for i in self.purchase_list]
         self.max_val = max(self.new_l)
         for i in self.purchase_list:
@@ -45,7 +45,7 @@ class PurchaseBook:
                 print(f'Most expensive purchase is {i}')
                 break
 
-    def __find_item__(self, item):
+    def find_item(self, item):
         self.item = item
         self.q = None
         for i in self.purchase_list:
@@ -57,7 +57,7 @@ class PurchaseBook:
         else:
             print(f'{item} is absent in purchase list')
 
-    def __average_check__(self):
+    def average_check(self):
         self.new_l = [i.get('cost') for i in self.purchase_list]
         print('Average check =', int(sum(self.new_l) / len(self.new_l)))
 
@@ -108,13 +108,13 @@ while a != 7:
         # for i in purchase_book:
         #     print (i)
     elif a == 3:
-        pl1.__sum_purchases__()
+        pl1.sum_of_purchases()
         # sum_purchases = 0
         # for i in purchase_book:
         #     sum_purchases += i.get('cost')
         # print('Общая сумма всех покупок =', sum_purchases)
     elif a == 4:
-        pl1.__max_purchase__()
+        pl1.max_purchase()
         # new_l = [i.get('cost') for i in purchase_book]
         # max_val = max(new_l)
         # for i in purchase_book:
@@ -123,7 +123,7 @@ while a != 7:
         #         break
     elif a == 5:
         itemName = input('Введите название покупки:')
-        pl1.__find_item__(itemName)
+        pl1.find_item(itemName)
         # q = None
         # for i in purchase_book:
         #     if itemName in i.values():
@@ -134,7 +134,7 @@ while a != 7:
         # else:
         #     print(f'{itemName} is absent in purchase list')
     elif a == 6:
-        pl1.__average_check__()
+        pl1.average_check()
         # new_l = [i.get('cost') for i in purchase_book]
         # print('Average check =', int(sum(new_l) / len(new_l)))
 
